@@ -1,0 +1,16 @@
+stack_name              = "sunpower"
+application_health_path	= "/"
+application_port        = 8080
+autoscale_group_name    = "myapp-asg"
+launch_config_name      = "myapp-lc"
+lb_name                 = "myapp-alb"
+environment             = "test"
+image_id                = "ami-07079058aa890ee37"
+instance_type           = "t2.large"
+keypair_name            = "rkondakindi"
+vpc_id                  = "vpc-5c2f0b3a"
+subnets                 = ["subnet-8cf66780","subnet-6093904d"]
+volume_size             = 30
+volume_type             = "gp2"
+ssh_key_file            = "~/.ssh/id_rsa"
+your_source_ip		      = "173.174.207.164/32"

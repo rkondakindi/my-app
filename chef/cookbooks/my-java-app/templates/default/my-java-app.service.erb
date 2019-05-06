@@ -1,0 +1,13 @@
+[Unit]
+Description=my-java-app
+
+[Service]
+Type=simple
+User=root
+Group=root
+ExecStart=/usr/bin/java -jar /opt/hello-world-spring-boot/target/myproject-0.0.1-SNAPSHOT.jar
+Restart=always
+WorkingDirectory=/opt/hello-world-spring-boot
+
+[Install]
+WantedBy=multi-user.target
