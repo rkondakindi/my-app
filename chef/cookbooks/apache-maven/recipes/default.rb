@@ -7,7 +7,7 @@
 # Install Oracle JDK
 # NOTE: Oracle Stopped downloading without login. So, you can keep binaries in your artifactories and
 # use remote_file resource to download file to install JDK.
-cookbook_file ::File.join(Chef::Config[:file_cache_path], 'jdk-8u201-linux-x64.rpm') do
+remote_file ::File.join(Chef::Config[:file_cache_path], 'jdk-8u201-linux-x64.rpm') do
   source 'http://pnp-artifactories.s3-website-us-east-1.amazonaws.com/jdk-8u201-linux-x64.rpm'  # Can be replaced with other artifacts and write chef resource to download from Oracle site.
   mode 0644
 end
