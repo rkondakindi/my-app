@@ -209,8 +209,8 @@ resource "aws_lb_target_group" "lb_target_group" {
 #    a. Install chef-client through user_data
 #    b. Write bash script under user_data to setup chef-client environment to connect with Chef server (/etc/chef/client.rb)
 #    c. Run chef-client with sepecific role/recipe.
-# 2. Manual Method
-#    a. Create an custom AMI with pre-built chef-client/chefdk software and cookbooks: my-app/chef/cookbooks
+# 2. Manual Method (chef-solo)
+#    a. Make sure cookbooks are available in git repo and set paths properly
 #    b. Run `terraform apply`
-#    c. Make sure `kitchen test` command in user_data which will deploy chef resources when EC2 provisioned.
+#    c. Autoscaling user_data will install chefdk and run `chef-solo` command to apply recipe.
 # check code at https://github.com/rkondakindi/my-app/terraform/myapp-infra/user_data_asg.tpl

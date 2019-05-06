@@ -24,9 +24,9 @@ output "elb_arn" {
   value = "${aws_lb.lb.arn}"
 }
 
-output "elb_dns_name" {
-  description = "DNS Name of the Elastic Load Balancer"
-  value = "${aws_lb.lb.dns_name}"
+output "url_name" {
+  description = "Application URL with DNS Name of the Elastic Load Balancer"
+  value = "http://${aws_lb.lb.dns_name}"
 }
 
 output "elb_zone_id" {

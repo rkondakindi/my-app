@@ -7,7 +7,26 @@ Configuration in this directory creates the following AWS Resources
 
 ## Usage
 
-To run this example you need to execute:
+Create `terraform.tfvars` to provide inputs to variables like below
+
+```
+stack_name              = "mystack"
+application_health_path = "/"
+application_port        = 8080
+autoscale_group_name    = "myapp-asg"
+launch_config_name      = "myapp-lc"
+lb_name                 = "myapp-alb"
+environment             = "test"
+image_id                = "ami-07079058aa890ee37"
+instance_type           = "t2.large"
+keypair_name            = "rtest"
+vpc_id                  = "vpc-5b2f00b3b"
+subnets                 = ["subnet-xxxxx","subnet-yyyyyyy"]
+volume_size             = 30
+volume_type             = "gp2"
+your_source_ip          = "42.8.8.8/32"
+``` 
+you need to execute below to deploy your application
 
 ```bash
 $ terraform init
@@ -49,5 +68,6 @@ Here find the sample inputs required to deploy MyApp Infrastructure
 | asg_lc_name | AutoScaling Launch Configuration Name |
 | asg_id | AutoScaling ID |
 | elb_arn | Elastic Load Balancer ID |
-| elb_dns_name | DNS Name of the Elastic Load Balancer |
+| url_name | Application URL with ELB DNS Name |
 | elb_zone_id | Zone ID of the Elastic Load Balancer |
+

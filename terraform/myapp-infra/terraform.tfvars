@@ -12,5 +12,4 @@ vpc_id                  = "vpc-5c2f0b3a"
 subnets                 = ["subnet-8cf66780","subnet-6093904d"]
 volume_size             = 30
 volume_type             = "gp2"
-ssh_key_file            = "~/.ssh/id_rsa"
 your_source_ip		      = "173.174.207.164/32"

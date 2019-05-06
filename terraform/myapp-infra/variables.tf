@@ -64,7 +64,3 @@ variable "application_port" {
 variable "application_health_path" {
   description = "Enter your application path for ELB Health Checks. eg: '/', '/app/health', '/login'"
 }
-
-variable "ssh_key_file" {
-  description = "Path of the SSH private key for connection to SSH"
-}
