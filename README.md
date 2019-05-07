@@ -9,7 +9,7 @@ Follow below steps to Deploy this application:
 3. Change directory to `my-app/terraform/myapp-infra` as shown below
 
    `cd my-app/terraform/myapp-infra`
-4. Create `terraform.tfvars` file as mentioned in https://github.com/rkondakindi/my-app/terraform/myapp-infra/README.md
+4. Create `terraform.tfvars` file as mentioned in https://github.com/rkondakindi/my-app/blob/master/terraform/myapp-infra/README.md
 5. Run Terraform
    ```
    terraform init
