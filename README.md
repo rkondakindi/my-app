@@ -6,8 +6,9 @@ Follow below steps to Deploy this application:
    a. Link: https://www.terraform.io/downloads.html
 2. Clone this Repo to your desktop
    `git clone https://github.com/rkondakindi/my-app/`
-3. Change directory to `terraform/myapp-infra`
-   `cd terraform/myapp-infra`
+3. Change directory to `my-app/terraform/myapp-infra` as shown below
+
+   `cd my-app/terraform/myapp-infra`
 4. Create `terraform.tfvars` file as mentioned in https://github.com/rkondakindi/my-app/terraform/myapp-infra/README.md
 5. Run Terraform
    ```
