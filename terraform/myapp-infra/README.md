@@ -7,7 +7,7 @@ Configuration in this directory creates the following AWS Resources
 
 ## Usage
 
-Create `terraform.tfvars` to provide inputs to variables like below
+Create `terraform.tfvars` file to provide vaules to variables. Here find the reference file below. data But, Make sure to change VPC, subnets, your_source_ip details as per your AWS settings. 
 
 ```
 stack_name              = "mystack"
