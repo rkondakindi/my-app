@@ -40,6 +40,5 @@ metadata.json
 
 
 # Terraform
-.terraform
-terraform.tfstate
-terraform.tfstate.backup
+.terraform*
+*.tfstate*
